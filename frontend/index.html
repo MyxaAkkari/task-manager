@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="home-link"><a href="./createtask.html">New task</a></li>
+            <li><a href="./index.html">Home</a></li> 
+            <li><a href="./completed.html">Completed</a></li>
+            <li class="logout-link"><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+    <div id="main-content">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search tasks..." oninput="searchTasks()">
+        </div>
+        <section id="editTaskSection" style="display: none;">
+            <h2>Edit Task</h2>
+            <button onclick="toggleEditTaskForm()">Close</button>
+            <form id="editTaskForm">
+                <label for="newTitle">New Title:</label>
+                <input type="text" id="newTitle" name="newTitle">
+                <label for="newDescription">New Description:</label>
+                <input type="text" id="newDescription" name="newDescription">
+                <label for="newStatus">New Status:</label>
+                <input type="text" id="newStatus" name="newStatus">
+                <button type="button" onclick="editTask()">Save Changes</button>
+            </form>
+        </section>
+        <ul id="tasksList"></ul>
+
+
+    </div>
+</body>
+
+</html>

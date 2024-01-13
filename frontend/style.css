@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+#errorMessage {
+    color: red;
+}
+
+body {
+    background: #25252b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #45f3ff;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+
+input[type="submit"], button {
+    background: #45f3ff;
+    border: none;
+    font-weight: 500;
+    color: #111;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1em;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+input[type="submit"]:hover, button:hover {
+    box-shadow: 0 0 10px #45f3ff, 0 0 60px #45f3ff;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+#main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 70px;
+}
+
+.menu li {
+    display: inline-block;
+    width: 90px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu>li:hover>a {
+    color: #45f3ff;
+}
+
+.menu>li:hover>a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+.menu>li a {
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+}
+
+.menu>li>a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 3px;
+    left: 0px;
+    background-color: #45f3ff;
+    transition: all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
+}
+
+
+.home-link {
+    margin-right: auto;
+    padding: 7px 7px;
+}
+
+.logout-link {
+    margin-left: auto;
+}
+
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+th {
+    background-color: #45f3ff;
+    color: #111;
+}
+
+/* Add a border-bottom to each task to create a separation */
+#tasksList li, #completedTasksList li {
+    border-bottom: 1px solid #45f3ff;
+    padding-bottom: 10px; /* Adjust the spacing as needed */
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+}
+
+/* Style for the last task to remove the bottom border */
+#tasksList li:last-child, #completedTasksList li:last-child {
+    border-bottom: none;
+}
