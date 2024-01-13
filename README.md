@@ -104,7 +104,7 @@ Task Manager is a web-based application that allows users to manage their tasks 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/task-manager.git
+   git clone https://github.com/MyxaAkkari/task-manager.git
    cd task-manager
 2. **Install Dependencies:**
   ```bash
