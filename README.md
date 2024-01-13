@@ -107,12 +107,13 @@ Task Manager is a web-based application that allows users to manage their tasks 
    git clone https://github.com/MyxaAkkari/task-manager.git
    cd task-manager
 2. **Install Dependencies:**
-  ```bash
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 3. **Run the Application:**
-  ```bash
-  python app.py
-The application will be accessible at `http://127.0.0.1:8000`.
+   ```bash
+   python app.py
+
 4. **Access the Application:**
-  Open your web browser and go to `http://127.0.0.1:8000` to use the Task Manager.
+
+   Open your web browser and go to `http://127.0.0.1:8000` to use the Task Manager.
 
